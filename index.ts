@@ -1,4 +1,4 @@
-import { METHOD_ENDPOINTS_TO_SCHEMA } from '../constants/api'
+import { METHOD_ENDPOINTS_TO_SCHEMA } from './constants'
 import { InternalQueryParameters, Method, QueryOptionsParameter, QueryParameters, QueryReturn } from '../types/api'
 
 const internal = async <T extends Method>(parameters: InternalQueryParameters<T>, options?: QueryOptionsParameter): Promise<QueryReturn<T>> => {
